@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st 
 
-model=load_model('model.h5')
+model=load_model('model.h5',compile=False)
 with open('labelencoder.pkl','rb') as f:
     label=pickle.load(f)
 with open('onehotencoder.pkl','rb') as f:
@@ -41,8 +41,9 @@ onehotencoder_df=onehot.transform([[Geography]]).toarray()
 onehot_dataframe=pd.DataFrame(onehotencoder_df,columns=onehot.get_feature_names_out(['Geography']))
 input_data=pd.concat([input_data.reset_index(drop=True),onehot_dataframe],axis=1)
 input_scaled=standscaler.transform(input_data)
-prediction=model.predict(input_data)
-if prediction>0.5:
-    st.write('The customer is likly churn')
-else:
-    st.write('The customer is not likly churn')
+prediction=model.predict(input_scaled)
+if st.button('predict customer churn in Bank'):
+    if prediction>0.5:
+        st.write('The customer is likly churn')
+    else:
+        st.write('The customer is not likly churn')
