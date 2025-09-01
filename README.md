@@ -46,8 +46,8 @@
 ---
 
 ## 📫 Connect With Me  
-- [GitHub](#)  
-- [LinkedIn](#)  
+- [GitHub](https://github.com/Naveenkumar-2007/)  
+- [LinkedIn](https://www.linkedin.com/in/naveen-kumar-chapala-69980533b/)  
 
 ---
 
