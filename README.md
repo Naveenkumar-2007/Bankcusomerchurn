@@ -58,5 +58,19 @@
 ![GitHub Streak](https://streak-stats.demolab.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight)  
 
 ---
+🔐 Project: Network Security Prediction  
 
-⭐️ **“Code. Train. Deploy. Repeat. — Turning ideas into impact with AI.”**
+📌 **Description**  
+A Machine Learning-based **Network Security Prediction App** that allows users to upload a CSV file and get predictions on potential security risks.  
+Built using **Streamlit and ML models**, the app simplifies security analysis for network data.  
+
+📂 **Features**  
+- Upload CSV file for prediction  
+- Automated preprocessing and validation  
+- Real-time ML predictions on security threats  
+- Interactive and user-friendly Streamlit interface  
+
+🚀 **Live Demo**  
+👉 [Try the App Here](https://naveenkumar-2007-security-app-gsmyb0.streamlit.app/)  
+
+⭐️ **Consistency Creates Breakthroughs **
